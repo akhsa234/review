@@ -1,0 +1,44 @@
+
+server:
+ port: 7080
+
+
+
+# spring.datasource.username=root
+# spring.datasource.password=123456
+servlet:
+  session:
+   store-dir:
+
+
+spring:
+ datasource:
+   url: jdbc:mysql://localhost:3306/review
+   username: root
+   password: 123456
+   driver-class-name: com.mysql.jdbc.Driver
+
+
+
+# spring.datasource.url = jdbc:mysql://localhost/abc
+# spring.datasource.name=testme
+# spring.datasource.username=xxxx
+# spring.datasource.password=xxxx
+# spring.datasource.driver-class-name= com.mysql.jdbc.Driver spring.jpa.database=mysql
+# spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+
+## MULTIPART (MultipartProperties)
+# Enable multipart uploads
+#servlet:
+#multipart:
+#enabled: true
+#max-file-size: 200MB       # Max file size.
+#file-size-threshold: 2KB   # Threshold after which files are written to disk.
+#max-request-size: 215MB    # Max Request Size
+
+
+## File Storage Properties
+# All files uploaded through the REST API will be stored in this directory
+
+file:
+upload-dir=:
